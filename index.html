@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+        <legend>Podstawowe dane</legend>
+        <label for="elementSelect">
+            nazwa elementu:
+            <select name="elementSelect" id="elementSelect">
+                <optgroup label="podstawowe">
+                <option value="p">p</option>
+                <option value="h1">h1</option>
+                <option value="h2">h2</option>
+                <option value="h3">h3</option>
+                <option value="h4">h4</option>
+                <option value="h5">h5</option>
+                <option value="h6">h6</option>
+                </optgroup >
+                <optgroup label="znaczniki sekcji">
+                <option value="div">div</option>
+                <option value="header">header</option>
+                <option value="main">main</option>
+                <option value="aside">aside</option>
+            </optgroup>
+            </select>
+        </label>
+        <label for="elementText">Tekst w elemencie: <input type="text"> </label>
+        <label for="elementDate">Data w elemencie: <input type="date"> </label>
+    </fieldset>
+    <fieldset>
+        <legend>Formatowanie bloku</legend>
+        <label for="elementPadding">Padding w elemencie: 0rem
+            <input type="range" max="1" min="0"> 1rem </label>
+            <label for="ElementMargin">Margines elementu: 0rem
+            <input type="range" max="1" min="0">1rem
+        </label>
+        
+    </fieldset>
+    <Fieldset>
+        <legend>Kolory</legend>
+        <label for="kolorCzcionki">
+            kolor czcionki: <input type="color" name="kolorCzcionki" id="kolorCzcionki">
+        </label>
+        <label for="kolorTla">Kolor tła elementu:
+            <input type="color" value="#89F0ED">
+        </label>
+    </Fieldset>
+    <Fieldset>
+        <legend>Formatowanie tekstu</legend>
+        <fieldset>
+            <legend>Odległość między literami (rem):</legend>
+            <label for="distnc"> <input type="number">rem</label>
+        </fieldset>
+        <fieldset>
+            <legend>Wyrównanie tekstu</legend>
+            <label for="textwyr">
+                lewa:<input type="radio" id="textwyr" name="textwyr">
+                środek:<input type="radio" id="textwyr" name="textwyr">
+                prawa:<input type="radio" id="textwyr" name="textwyr">
+            </label>
+            </fieldset> <fieldset>
+                <legend>Dekoracja tekstu</legend>
+            <label for="Dekotext">
+                podkreślenie<input type="checkbox" id="Dekotext" name="Dekotext">
+                przekreślenie<input type="checkbox" id="Dekotext" name="Dekotext">
+                nadkreślenie:<input type="checkbox" id="Dekotext" name="Dekotext">
+            </label>
+        
+        </fieldset>
+    </Fieldset>
+    <center><input type="button" value="Prześlij"></center>
+    </form>
+    
+</body>
+</html>
